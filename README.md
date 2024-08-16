@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Aminul Islam</h1>
-- 🌱 I’m currently learning **Spring Boot**
+- 🌱 Currently I'm Node.js developer
 
 - 📫 How to reach me **aminulislam03905@gmail.com**
 
