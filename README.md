@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Aminul Islam</h1>
-- 🌱 Currently I'm Node.js developer
+- 🌱 Currently I design website on backend side.
 
 - 📫 How to reach me **aminulislam03905@gmail.com**
 
