@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Aminul Islam} \\ \vspace{1pt}
+    \small +91 9064767147 $|$ \href{mailto:aminulislam03905@gmail.com}{\underline{aminulislam03905@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/aminulee}{\underline{linkedin.com/in/aminulee}} $|$
+    \href{https://github.com/aminulislam33}{\underline{github.com/aminulislam33}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Engineering Science and Technology, Shibpur}{Howrah, India}
+      {Bachelor of Technology in Electrical Engineering}{Aug. 2023 -- Present}
+      \resumeSubheading
+      {Al Ameen Residential Academy, Budge Budge}{South 24 Parganas, India}
+      {High School}{Jul. 2020 -- Apr. 2022}
+    \resumeSubheading
+      {Kaliachak Abasik Mission}{Malda, India}
+      {High School}{Jan. 2015 -- Feb. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Core Member at Instruo 2025 (Annual Techno-management Fest)}{Jan 2025 -- Present}
+      {Indian Institute of Engineering Science and Technology, Shibpur}{Howrah, India}
+      \resumeItemListStart
+        \resumeItem{Contributed to the Instruo 2025 website with a React-based frontend and Node.js backend.}
+        \resumeItem{Implemented OAuth2 authentication for secure user access and third-party integrations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Lead at Electrical Engineer’s Society (EES)}{Sept 2024 -- Present}
+      {Indian Institute of Engineering Science and Technology, Shibpur}{Howrah, India}
+      \resumeItemListStart
+        \resumeItem{Leading the development of a web application for weekly aptitude tests under AptiCrack initiative.}
+        \resumeItem{Built with React for frontend and Node.js for backend, with MongoDB as the database.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{URL Shrink} $|$ \emph{\href{https://github.com/aminulislam33/URL-Shortener}{Source Code}} $|$ \emph{Node.js, Express, MongoDB, HTML/CSS}} {}
+      \resumeItemListStart
+        \resumeItem{Built a URL shortener with secure user authentication and MongoDB-based URL mapping.}
+        \resumeItem{Developed a minimal front-end using HTML/CSS and a robust Node.js back-end.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Student Portal} $|$ \emph{\href{https://github.com/aminulislam33/student-portal}{Source Code}} $|$ \emph{React.js, Node.js, MongoDB, Nodemailer}} {}
+      \resumeItemListStart
+        \resumeItem{Developed an academic dashboard for students to view marksheets, attendance, and other academic details.}
+        \resumeItem{Implemented email notifications using Nodemailer and JWT-based authentication.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Chat Application} $|$ \emph{Source Code on Request} $|$ \emph{Node.js, Express, Socket.io, HTML/CSS}} {}
+      \resumeItemListStart
+        \resumeItem{Built a real-time text chat app with user authentication and end-to-end encryption using WebSockets.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{StreamFlix} $|$ \emph{\href{https://github.com/aminulislam33/StreamFlix}{Source Code}} $|$ \emph{React.js, Node.js, Razorpay, EJS}} {}
+      \resumeItemListStart
+        \resumeItem{Created a movie streaming platform with Razorpay payment integration and gated access.}
+        \resumeItem{Used EJS for templating and implemented secure user authentication.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Kolkata Bus Route Viewer} $|$ \emph{Private Project} $|$ \emph{React.js, Node.js, MongoDB}} {}
+      \resumeItemListStart
+        \resumeItem{Built an app to help travelers find optimal bus routes within Kolkata.}
+        \resumeItem{Used React for the front-end and Node.js + MongoDB for the back-end.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, C/C++, SQL (Postgres), Typescript, HTML/CSS} \\
+     \textbf{Frameworks}{: Node.js, Tailwind CSS} \\
+     \textbf{Developer Tools}{: Git/GitHub, Linux, Docker, Microsoft Azure, Vercel, Cloudflare} \\
+     \textbf{Libraries}{: React JS, Express JS}
+    }}
+ \end{itemize}
+
+ %-----------PARTICIPATION-----------
+\section{Participation}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Smart India Hackathon 2024}}{}
+      \resumeItemListStart
+        \resumeItem{College-level qualifier for SIH 2024 with a chatbot-based multilingual ticketing system developed for the Ministry of Tourism.}
+        \resumeItem{Designed to automate tourist service queries and issue tickets in regional languages for enhanced accessibility.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
