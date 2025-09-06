@@ -1,7 +1,5 @@
 <h1 align="center">Hi 👋, I'm Aminul Islam</h1>
 
-- ⚡ I am currently focused on **Electrical Engineering**, exploring circuits, hardware, and embedded systems.
-
 - 💻 I previously worked in **backend** web development, where I built core functionalities using **JavaScript (Node.js)** and **MongoDB**. I designed robust APIs using technologies such as **Express.js**, **JWT authentication**, and other tools and libraries like **Mongoose** and **Postman** for development and testing.
 - 📫 How to reach me: **aminulislam03905@gmail.com**
 
