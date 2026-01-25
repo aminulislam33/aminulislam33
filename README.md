@@ -1,6 +1,6 @@
 <h1 align="center">Aminul Islam</h1>
 
-Backend engineer with a focus on distributed service design and data-centric applications. Most of my work revolves around designing stable APIs, modeling data workflows, and making systems behave predictably under load. I tend to invest in clarity, operational simplicity, and correctness before unnecessary complexity.
+Backend developer with a focus on distributed service design and data-centric applications. Most of my work revolves around designing stable APIs, modeling data workflows, and making systems behave predictably under load. I tend to invest in clarity, operational simplicity, and correctness before unnecessary complexity.
 
 ---
 
