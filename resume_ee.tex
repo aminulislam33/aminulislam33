@@ -18,23 +18,12 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -47,7 +36,6 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
@@ -57,10 +45,9 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure ATS readability
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -91,9 +78,7 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -102,18 +87,28 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-
 \begin{center}
-    \textbf{\Huge \scshape Aminul Islam} \\ \vspace{1pt}
-    \small +91 9064767147 $|$ \href{mailto:aminulislam03905@gmail.com}{\underline{aminulislam03905@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/aminulee}{\underline{linkedin.com/in/aminulee}} $|$
-    \href{https://github.com/aminulislam33}{\underline{github.com/aminulislam33}}
+    \begin{minipage}{0.78\textwidth}
+        \centering
+        {\Huge \textbf{Aminul Islam}} \\ \vspace{2pt}
+        \small
+        +91 9064767147 $|$
+        \faEnvelope \,
+        \href{mailto:aminulislam03905@gmail.com}
+        {\underline{aminulislam03905@gmail.com}} $|$
+        \faLinkedin \,
+        \href{https://linkedin.com/in/aminulee}
+        {\underline{www.linkedin.com/in/aminulee}}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.17\textwidth}
+        \centering
+        \includegraphics[width=1.0in,height=1.0in,keepaspectratio]{resume/photo2.jpeg}
+    \end{minipage}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -121,86 +116,98 @@
 
     \resumeSubheading
       {Indian Institute of Engineering Science and Technology, Shibpur}{Howrah, India}
-      {Bachelor of Technology in Electrical Engineering}{Aug. 2023 -- Present}
-        \resumeItem{CGPA: 7.57/10}
+      {Bachelor of Technology in Electrical Engineering}{Aug 2023 -- Present}
+        \resumeItemListStart
+          \resumeItem{CGPA: 7.46/10}
+        \resumeItemListEnd
 
     \resumeSubheading
       {Al Ameen Residential Academy, Budge Budge}{South 24 Parganas, India}
-      {Higher Secondary}{Jul. 2020 -- Apr. 2022}
-        \resumeItem{Percentage: 91.4\%}
-
-    \resumeSubheading
-      {Kaliachak Abasik Mission}{Malda, India}
-      {Secondary}{Jan. 2015 -- Feb. 2020}
-        \resumeItem{Percentage: 95.57\%}
+      {Higher Secondary (Physics, Chemistry, Mathematics)}{Jul 2020 -- Apr 2022}
+        \resumeItemListStart
+          \resumeItem{Percentage: 91.4\%}
+        \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
+    \resumeSubheading
+  {Summer Intern}{Farakka, India}
+  {NTPC Limited}{May 2026 -- Jun 2026}
+  \resumeItemListStart
+    \resumeItem{Analyzed generation operations and central monitoring at a \textbf{2100 MW thermal power plant}, evaluating core subsystems including coal handling, boiler-turbine coordination, and environmental controls.}
+    \resumeItem{Evaluated critical electrical infrastructure, including \textbf{400 kV/220 kV switchyards}, generator excitation systems, and real-time synchronization protocols with the National Grid.}
+  \resumeItemListEnd
 
+    \resumeSubheading
+      {BYTE Mentee'25 (Analog) $|$ Build Your Technical Edge}{Remote}
+      {Texas Instruments India}{May 2025 -- Jul 2025}
+      \resumeItemListStart
+        \resumeItem{Completed an 8-week mentorship on Linear Networks, covering R-C circuits, transforms, diodes, and op-amps.}
+        \resumeItem{Performed circuit simulations in \textbf{QUCS} and collaborated on a final group project under TI technical leaders.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Design and Implementation of a Linear Power Supply $|$ \emph{Team Project}}{Jan 2025 -- Apr 2025}
+\resumeSubheading
+  {Quadrotor Control \& Simulation Toolbox $|$ B.Tech Major Project}{Aug 2026 -- Present}
+  {Indian Institute of Engineering Science and Technology, Shibpur}{Howrah, India}
+  \resumeItemListStart
+    \resumeItem{Reviewing 6-DOF Newton-Euler quadrotor dynamics and non-linear control strategies (LQR, feedback linearization) to establish the theoretical framework for a simulation toolbox.}
+  \resumeItemListEnd
+
+   \resumeSubheading
+      {12\,V Regulated Linear Power Supply $|$ \emph{Team Lead}}{Jan 2025 -- Apr 2025}
       {Indian Institute of Engineering Science and Technology, Shibpur}{}
       \resumeItemListStart
-        \resumeItem{Led a team of five to design and build a 12V DC linear power supply under the guidance of \emph{Dr. Suvarun Dalapati, Asst. Professor, EE, IIEST Shibpur}, using transformer, full-wave rectifier, filter capacitors, 7812/7912 regulators, and a feedback stage.}
-        \resumeItem{Simulated the complete power supply circuit using \textbf{MATLAB/Simulink} to validate performance under both dynamic loading and steady-state conditions.}
-        \resumeItem{Integrated a feedback-based regulation loop to ensure stable output voltage across varying load conditions.}
+        \resumeItem{Designed a 220\,V AC to 12\,V DC regulated power supply, utilizing an emitter-follower stage to optimize load regulation and minimize output impedance.}
+        \resumeItem{Simulated ripple voltage, transient response, and line regulation in \textbf{MATLAB/Simulink} prior to PCB implementation.}
+        \resumeItem{Achieved \(\pm\)0.3\,V accuracy, successfully validating ripple rejection and thermal stability under sustained loads.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
 
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C, C++} \\
-     \textbf{Simulation Tools}{: MATLAB, Simulink, LTSpice, QUCS} \\
+    \textbf{Coursework}{: Electrical Machines, Power System, Power Electronics, Control System, Network Theory}\\
+     \textbf{Simulation \& EDA Tools}{: LTspice, QUCS, MATLAB, Simulink} \\
+     \textbf{Programming Languages}{: C, C++} \\
      \textbf{Developer Tools}{: Git, GitHub, Linux}
     }}
  \end{itemize}
 
- %-----------CERTIFICATIONS-----------
-\section{Certifications}
-  \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {BYTE – Build Your Technical Edge Workshop (Analog) \href{https://drive.google.com/file/d/1PN3twp-L0Siu4Rd_7B1Ko6CjE334moyF/view?usp=sharing}{[Certificate]}}{May 2025 -- Jul. 2025}
-      {Texas Instruments India}{Issued: 31 Jul. 2025}
-
-  \resumeSubHeadingListEnd
-
-
-
-
- %-----------PARTICIPATION-----------
-\section{Leadership \& Participation}
+%-----------LEADERSHIP & ACTIVITIES-----------
+\section{Leadership \& Activities}
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Smart India Hackathon 2024}}{Sept 2024}
+      {\textbf{Head Web Developer} $|$ Electrical Engineer's Society, IIEST Shibpur}{Sept 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{College-level qualifier for SIH 2024 with a chatbot-based multilingual ticketing system developed for the Ministry of Tourism.}
-        \resumeItem{Designed to automate tourist service queries and issue tickets in regional languages for enhanced accessibility.}
+        \resumeItem{Managing the EES departmental website and driving technical content strategy for student outreach.}
+        \resumeItem{Leading development of \textbf{AptiCrack}, an EES platform for weekly aptitude and technical practice assessments.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Web Operation Lead}}{Sept 2024 - Present}
+      {\textbf{Team Leader} $|$ Smart India Hackathon (SIH)}{2024}
       \resumeItemListStart
-        \resumeItem{Managing the website of Electrical Engineer's Society.} \resumeItem{Developing a separate platform for taking test, AptiCrack, an EES initiate for practicing aptitute weekly}
+        \resumeItem{Led a team that successfully qualified at the college-level round for SIH 2024.}
+        \resumeItem{Spearheaded the development of a multilingual chatbot leveraging Natural Language Processing (NLP) to provide seamless assistance to tourists.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
 
 
 %-------------------------------------------
